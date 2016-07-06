@@ -1,0 +1,26 @@
+﻿Build started 2/19/2014 4:59:11 PM.
+     1>Project "D:\4220group\Rails Code\Ned3D\Ned3D.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug\Ned3D.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\Microsoft DirectX SDK (August 2006)\Lib\x86" d3d9.lib Ws2_32.lib d3dx9.lib dsound.lib winmm.lib dxguid.lib dinput8.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Debug\Ned3D.pdb" /SUBSYSTEM:WINDOWS /OPT:NOREF /OPT:NOICF /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Debug\Ned3D.lib" /MACHINE:X86 /SAFESEH Debug\BulletObject.obj
+         Debug\CrowObject.obj
+         Debug\Game.obj
+         Debug\Grid.obj
+         Debug\Ned3DObjectManager.obj
+         Debug\PlaneObject.obj
+         Debug\SiloObject.obj
+         Debug\StateIntro.obj
+         Debug\StateMenu.obj
+         Debug\StatePlaying.obj
+         Debug\TerrainObject.obj
+         Debug\Timer.obj
+         Debug\WaterObject.obj
+         Debug\WindmillObject.obj
+         Debug\WinMain.obj
+         "D:\4220group\Rails Code\SAGE\Debug\Sage.lib"
+     1>BulletObject.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         Ned3D.vcxproj -> D:\4220group\Rails Code\Ned3D\Debug\Ned3D.exe
+     1>Done Building Project "D:\4220group\Rails Code\Ned3D\Ned3D.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.79

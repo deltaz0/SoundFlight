@@ -1,0 +1,305 @@
+HB 03:05A 5/08/14 --------------- Revision 35 ------------------
+- Modified
+	PlaneObject.cpp/h
+	StatePlaying.cpp/h
+	Objects.h
+	ObjectTypes.h
+- Removed
+	BulletObject.cpp/h
+	CrowObject.cpp/h
+	SiloObject.cpp/h
+	TerrainObject.cpp/h
+	WindmillObject.cpp/h
+- Gutted old Ned code
+- Created a new folder "Final Code" since so many changes were
+  made
+----------------------------------------------------------------
+
+
+HB 06:59A 5/08/14 --------------- Revision 34 ------------------
+- Modified
+	StatePlaying.cpp/h
+	Timer.cpp/h
+- Added
+	Countdown before song starts; timer correctly starts music
+	once the countdown has finished
+----------------------------------------------------------------
+
+
+HB 06:26A 5/08/14 --------------- Revision 33 ------------------
+- Modified
+	StatePlaying.cpp/h
+- Added
+	Score and Multiplier displayed at right side of screen
+- Removed
+	Terrain from rendering
+----------------------------------------------------------------
+
+SJ 01:28P 4/30/14 --------------- Revision 27 ------------------
+- Modified
+	TetherCamera.cpp
+	GridManager.cpp
+	miditextparser.cpp/h
+	PlaneObject.cpp/h
+	StateMenu.cpp/h
+	StatePlaying.cpp/h
+- Added
+	A bunch of stuff in sounds
+	4 textures
+- Ton of stuff. Too much to write and not enough time.
+----------------------------------------------------------------
+
+
+HB 01:55A 4/30/14 --------------- Revision 26 ------------------
+- Modified
+	models.xml
+	objects.h
+	stateplaying.cpp/h
+	Ned3DObjectManager.cpp/h
+	Possibly more...
+- Added
+	SpaceShipObject.cpp/h
+- Created new class for SpaceShipObject, which began as a clone
+  of PlaneObject
+- Added new model/texture retroship to be used
+----------------------------------------------------------------
+
+
+SJ 11:10P 4/29/14 --------------- Revision 25 ------------------
+- - - - CHANGES TO SVN REPOSITORY - - - -
+- Deleted folders (out-of-date versions of project):
+	/SamsNewRepoFeb23
+	/RailsCode
+- Renamed folders:
+	/samsnewrepomar19 -> /Revision 24 Repo Old
+	/Group 5 Release Milestone -> /Group 5 Release Milestone 1
+- Created new folders:
+	/Sam Current Repo (contains my current version of project)
+	/Hayden Current Repo (empty, for hayden's stuff)
+	/Group 5 Release Presentation (empty, for wed presentation)
+- - - - - - - - - - - - - - - - - - - - -
+- Modified
+    models.xml
+	PlaneObject.cpp
+	StatePlaying.cpp/h
+- New
+	(Models)
+	FlyingEnemyConv.s3d
+	(Textures)
+	FlyingEnemyTexture.tga, space.png
+- Another big update consolidated into one revision. My bad.
+- All changes are in StatePlaying and PlaneObject, which are
+  heavily modified.
+- Changed plane model to FlyingEnemyConv.s3d, which is a
+  modification of FlyingEnemy.s3d from the class models folder
+  spacially skewed, rotated, and sized through an old command
+  line tool I wrote for s3ds).
+- Added skydome (more of a skywall). It is a rendered quad based
+  on the camera view using space.png. Support for translating
+  skywall for effect is implemented, but currently disabled.
+- Added controller support (works with my ps2 controller).
+- Re-implemented plane model rotation with some modifiable
+  constraints. Now works with all lanes with no issues for both
+  keyboard and controller.
+- There are various other things I've modified since the
+  the last revision that I can't remember. Small adjustments
+  like changing the colors of the grid corners. Tortoisesvn is
+  telling me these changed must have been contained in the files
+  I modified for this revision, so no issues there I guess.
+----------------------------------------------------------------
+
+
+SJ 11:29A 4/19/14 --------------- Revision 24 ------------------
+- Modified
+    GridManager.h/cpp, PlanObject.h/cpp,
+	StatePlaying.h/cpp
+- New
+	miditextparser.h/cpp, midi2txt.exe,
+	bsynth/perc/drums/bass./mid/txt,
+	gridproggoaltexture.png, gridprogresstexture.png,
+	gridshadowtexture.png
+- Wrote the majority of the core game over the past couple
+  weeks. I made the mistake of not stopping and uploading to the
+  repo periodically. So I've done too much in this revision
+  to remember or appropriately document here.
+- The general summary is miditext.exe is a commandline tool
+  which converts a midi file into a txt that the game can parse
+  into a lane for a level. The game does this and spawns cubes
+  corresponding to that. There's a group of functions which
+  determine how the cubes are spawned based on pitch, time,
+  relative pitch and time, frequency, difficulty, and some
+  randomness. You can pick up nodes which give you points and
+  determine whether a lane's audio plays. Stay on a track long
+  enough without missing a node and the track will activate,
+  automatically collecting nodes for a given period.
+- The majority of the work of the game is contained in
+  GridManager.cpp, which has become a monster of a cpp.
+- There are a bunch of little things I'm leaving out but
+  hopefully this is enough info.
+----------------------------------------------------------------
+
+
+HB 8:04P 3/29/14 --------------- Revision 22 ------------------
+- Modified
+    PlaneObject.h/cpp, StatePlaying.h/cpp
+- New
+	GridManager.h/cpp
+- Deleted
+	Grid.h/cpp
+- Copied all grid code out of plane object and placed it into
+  GridManager.h/cpp and cleaned it up quite a bit
+- Created a GridManager object to be used by StatePlaying
+- Grid code has not yet been deleted from the plane code; that
+  will be next commit
+- Current Bug: GridManager can not activate lanes yet; the code
+  is currently still in PlaneObject.cpp, so audio activation
+  works, however the lanes do not light up
+----------------------------------------------------------------
+
+
+SJ 09:08P 3/19/14 --------------- Revision 21 ------------------
+- Added new repo
+- Moved changelog to root folder and deleted others
+----------------------------------------------------------------
+
+
+SJ 04:19A 3/19/14 --------------- Revision 17 ------------------
+- Modified
+	Game.h/cpp, PlaneObject.h/cpp, StatPlaying.h/cpp,
+	Timer.h/cpp, probably some others I'm forgetting
+- Added a texture for the lane highlighting
+	gridactivetexture.png
+- Modified menu texture
+- Added lane highlighting, for when a track is activated for
+  a certain time.
+- Space bar and P with activate and deactivate lanes for now.
+- Ton of changes to the rotation/movesment/camera. I think I
+  finally got it clean and reliable.
+- Lanes will actually activate/deactivate tracks. As in, the
+  audio for a track will only play while it's activated.
+- Cleaned up states between levels, they will fully reset now.
+- Implemented "Beat Fractions" in the timer, used for the lanes.
+- Improvements to the grid. No more clipping/weird transparency
+  issue like before. The lanes should line up perfectly now.
+- Fixed some bugs with the way the variable tempo interacts with
+  the grid. The tempo should control everything now with no
+  syncing issues.
+- A whole bunch of other stuff probably. Been working 20 hours
+  now I don't remember everything I did.
+----------------------------------------------------------------
+
+
+SJ 04:19A 3/19/14 --------------- Revision 16 ------------------
+- Added 4 new files to sound folder (for new song)
+- Made changes to
+	Game.h, Game.cpp, PlaneObject.cpp, StateMenu.cpp,
+	StatePlaying.cpp, Menu.tga
+- Can now pick one of two songs to play. Menu resets game state
+  when escaping and restarting. Game will adjust tempo to match
+  song, grid changes accordingly. Added new timer functions.
+----------------------------------------------------------------
+
+
+HB 04:39P 2/26/14 --------------- Revision 15 ------------------
+- Disabled plane movement animations due to them not appearing
+	correct when the plane is oriented in directions other
+	than the "standard" one.
+- Added Revision (commit) numbers to previous entries
+	in the changelog
+- Edited 1 file
+	PlaneObject.cpp
+- Small commit
+----------------------------------------------------------------
+
+
+HB 04:20P 2/26/14 --------------- Revision 14 ------------------
+- Enabled timed camera rotation instead of instant rotation;
+	the plane still instantly rotates
+- Added method to change the BPM of the timer after it has
+	been initialized
+- Cleaned up obsolete plane movement code
+- Edited 5 files
+	PlaneObject.cpp, StatePlaying.cpp/h, Timer.cpp/h
+----------------------------------------------------------------
+
+
+HB 01:00P 2/26/14 --------------- Revision 13 ------------------
+- Enabled Plane movement that responds to rotation
+- Edited 2 files
+	PlaneObject.cpp/h
+----------------------------------------------------------------
+
+
+HB 04:40A 2/26/14 --------------- Revision 12 ------------------
+- Implemented camera and plane model rotation using arrow keys
+- Plane movement is currently disabled (will need to be
+	modified to accommodate rotation)
+- Edited 5 files
+	PlaneObject.cpp/h, StatePlaying.cpp, TetherCamera.cpp/h
+----------------------------------------------------------------
+
+
+HB 02:31A 2/24/14 --------------- Revision 11 ------------------
+- Modified 3 files
+	Timer.cpp, PlaneObject.cpp, StatePlaying.cpp
+- Fixed Timer to start at 1:1; this required the grid rendering
+	to be slightly modified (1 line of code)
+- Removed false Timer start in StatePlaying::initiate()
+----------------------------------------------------------------
+
+
+SJ 08:48P 2/23/14 --------------- Revision 10 ------------------
+- Added 1 png file
+	Textures/gridbeattexture.png
+- Modified 3 textures
+	Loading.jpg, menu.tga, testtexture.png
+- Modified a bunch of other files
+	Removed all direct sound/sound manager stuff
+- Updated grid rails
+- Changed sky color
+- Added the grid blocks
+	Draws textures along the rails in time with the beat
+	Changes color mask to green when block is crossed
+----------------------------------------------------------------
+
+
+SJ 04:09P 2/23/14 --------------- Revision 08 ------------------
+- Added 1 png file
+	Textures/testtexure.png
+- Modified 5 files
+	Ned3DObjectManager.cpp/h, PlaneObject.cpp/h, StatePlaying.cpp
+- Added some control to plane spawn position, speed, grid size
+- Plane spawns higher and wont collide with terrain
+- Removed windmill and silos
+- Planeobject draws grid with new texture to represent bounds
+- For now it moves with plane, will need to spawn multiples
+  of the grid that dont move in the future
+----------------------------------------------------------------
+
+
+SJ 01:01A 2/23/14 --------------- Revision 07 ------------------
+- Modified StatePlaying.cpp
+	Moved sound buffer submission to start of game
+- Modified PlaneObject.cpp
+	Set constant speed
+	Changed movement from orientation to position-based
+	Added bounding rails in the x and y axes
+	Removed heading and set boundaries for pitch/bank	
+----------------------------------------------------------------
+
+
+SJ 11:28P 2/22/14 --------------- Revision 06 ------------------
+- Integrated XAudio2 into Ned
+- Added 3 cpp files
+	xsound.cpp, xsource.cpp, xmaster.cpp
+  4 headers
+	xsound.h, xsource.h, xmaster.h, wave.h
+  4 sound files
+	bdrums.wav, bperc.wav, bbass.wav, bsynth.wav
+- Edited 2 files
+	StatePlaying.h, StatePlaying.cpp
+- The XSound object can be used to do anything we need for audio.
+  Don't need to worry about the other classes.
+- StatePlaying loads in 4 audio tracks and plays them
+  simultaneously. I just put this in as an example.
+----------------------------------------------------------------

@@ -1,0 +1,131 @@
+﻿Build started 2/19/2014 4:50:23 PM.
+     1>Project "D:\4220group\Rails Code\SAGE\Sage.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\4220group\Rails Code\/SAGE/Source/" /ZI /nologo /W3 /WX /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source\Common\AABB3.cpp Source\Common\Bitmap.cpp Source\Common\Camera.cpp Source\Common\CommonStuff.cpp Source\Common\EditTriMesh.cpp Source\Common\EulerAngles.cpp Source\Common\FontCacheEntry.cpp Source\Common\MathUtil.cpp Source\Common\Matrix4x3.cpp Source\Common\Model.cpp Source\Common\plane.cpp Source\Common\Quaternion.cpp Source\Common\Random.cpp Source\Common\Renderer.cpp Source\Common\RotationMatrix.cpp Source\Common\TextureCacheEntry.cpp Source\Common\TriMesh.cpp Source\DerivedCameras\FollowCamera.cpp Source\Input\Input.cpp Source\Objects\GameObject.cpp Source\Objects\GameObjectManager.cpp Source\Terrain\HeightMap.cpp Source\Terrain\Terrain.cpp Source\Terrain\TerrainSubmesh.cpp Source\Game\GameBase.cpp Source\Sound\SoundManager.cpp Source\Particle\ParticleDefines.cpp Source\Particle\ParticleEffect.cpp Source\Particle\ParticleEngine.cpp Source\Particle\ParticleSystem.cpp Source\Graphics\Effect.cpp Source\Graphics\IndexBuffer.cpp Source\Graphics\ModelManager.cpp Source\Graphics\VertexBufferBase.cpp Source\Resource\ResourceBase.cpp Source\Resource\ResourceManager.cpp Source\Water\Reflection.cpp Source\Water\Water.cpp Source\Console\Console.cpp Source\Console\ConsoleCommands.cpp Source\Console\ConsoleCommentEntry.cpp Source\Console\textParser.cpp Source\TinyXML\tinystr.cpp Source\TinyXML\tinyxml.cpp Source\TinyXML\tinyxmlerror.cpp Source\TinyXML\tinyxmlparser.cpp Source\DerivedModels\AnimatedModel.cpp Source\DerivedModels\ArticulatedModel.cpp Source\DirectoryManager\DirectoryManager.cpp Source\WindowsWrapper\WindowsWrapper.cpp
+         WindowsWrapper.cpp
+         DirectoryManager.cpp
+         ArticulatedModel.cpp
+         AnimatedModel.cpp
+         tinyxmlparser.cpp
+         tinyxmlerror.cpp
+         tinyxml.cpp
+         tinystr.cpp
+         textParser.cpp
+         ConsoleCommentEntry.cpp
+         ConsoleCommands.cpp
+         Console.cpp
+         Water.cpp
+         Reflection.cpp
+         ResourceManager.cpp
+         ResourceBase.cpp
+         VertexBufferBase.cpp
+         ModelManager.cpp
+         IndexBuffer.cpp
+         Effect.cpp
+         Generating Code...
+         Compiling...
+         ParticleSystem.cpp
+         ParticleEngine.cpp
+         ParticleEffect.cpp
+         ParticleDefines.cpp
+         SoundManager.cpp
+         GameBase.cpp
+         TerrainSubmesh.cpp
+         Terrain.cpp
+         HeightMap.cpp
+         GameObjectManager.cpp
+         GameObject.cpp
+         Input.cpp
+         FollowCamera.cpp
+         TriMesh.cpp
+         TextureCacheEntry.cpp
+         RotationMatrix.cpp
+         Renderer.cpp
+         Random.cpp
+         Quaternion.cpp
+         plane.cpp
+         Generating Code...
+         Compiling...
+         Model.cpp
+         Matrix4x3.cpp
+         MathUtil.cpp
+         FontCacheEntry.cpp
+         EulerAngles.cpp
+         EditTriMesh.cpp
+         CommonStuff.cpp
+         Camera.cpp
+         Bitmap.cpp
+         AABB3.cpp
+         Generating Code...
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\4220group\Rails Code\/SAGE/Source/" /ZI /nologo /W3 /WX /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\ConsoleFunctionEntry1.obj" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source\Console\ConsoleFunctionEntry.cpp
+         ConsoleFunctionEntry.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\4220group\Rails Code\/SAGE/Source/" /ZI /nologo /W3 /WX /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\IDGenerator1.obj" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source\Generators\IDGenerator.cpp
+         IDGenerator.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\4220group\Rails Code\/SAGE/Source/" /ZI /nologo /W3 /WX /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\NameGenerator1.obj" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source\Generators\NameGenerator.cpp
+         NameGenerator.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\4220group\Rails Code\/SAGE/Source/" /ZI /nologo /W3 /WX /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\freecamera1.obj" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source\DerivedCameras\freecamera.cpp
+         freecamera.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\4220group\Rails Code\/SAGE/Source/" /ZI /nologo /W3 /WX /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\TetherCamera1.obj" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source\DerivedCameras\TetherCamera.cpp
+         TetherCamera.cpp
+       Lib:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"Debug\Sage.lib" /LIBPATH:"d3d9.lib dinput8.lib" /NOLOGO Debug\AABB3.obj
+         Debug\Bitmap.obj
+         Debug\Camera.obj
+         Debug\CommonStuff.obj
+         Debug\EditTriMesh.obj
+         Debug\EulerAngles.obj
+         Debug\FontCacheEntry.obj
+         Debug\MathUtil.obj
+         Debug\Matrix4x3.obj
+         Debug\Model.obj
+         Debug\plane.obj
+         Debug\Quaternion.obj
+         Debug\Random.obj
+         Debug\Renderer.obj
+         Debug\RotationMatrix.obj
+         Debug\TextureCacheEntry.obj
+         Debug\TriMesh.obj
+         Debug\FollowCamera.obj
+         Debug\Input.obj
+         Debug\GameObject.obj
+         Debug\GameObjectManager.obj
+         Debug\HeightMap.obj
+         Debug\Terrain.obj
+         Debug\TerrainSubmesh.obj
+         Debug\GameBase.obj
+         Debug\SoundManager.obj
+         Debug\ParticleDefines.obj
+         Debug\ParticleEffect.obj
+         Debug\ParticleEngine.obj
+         Debug\ParticleSystem.obj
+         Debug\Effect.obj
+         Debug\IndexBuffer.obj
+         Debug\ModelManager.obj
+         Debug\VertexBufferBase.obj
+         Debug\ResourceBase.obj
+         Debug\ResourceManager.obj
+         Debug\Reflection.obj
+         Debug\Water.obj
+         Debug\Console.obj
+         Debug\ConsoleCommands.obj
+         Debug\ConsoleCommentEntry.obj
+         Debug\textParser.obj
+         Debug\tinystr.obj
+         Debug\tinyxml.obj
+         Debug\tinyxmlerror.obj
+         Debug\tinyxmlparser.obj
+         Debug\AnimatedModel.obj
+         Debug\ArticulatedModel.obj
+         Debug\DirectoryManager.obj
+         Debug\WindowsWrapper.obj
+         Debug\ConsoleFunctionEntry1.obj
+         Debug\IDGenerator1.obj
+         Debug\NameGenerator1.obj
+         Debug\freecamera1.obj
+         Debug\TetherCamera1.obj
+         Sage.vcxproj -> D:\4220group\Rails Code\SAGE\Debug\Sage.lib
+     1>Done Building Project "D:\4220group\Rails Code\SAGE\Sage.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:44.24
